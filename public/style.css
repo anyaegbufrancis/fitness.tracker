@@ -81,6 +81,11 @@ select option {
   font-weight: normal;
   width: 100%;
 }
+.border{
+  border-right: solid white 2px;
+  padding-right: 1rem;
+  margin-right: 1rem;
+}
 
 input {
   display: block;
