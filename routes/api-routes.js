@@ -14,7 +14,7 @@ router.get("/api/workouts", (req, res) => {
         totalDuration +=  (lastExercise.exercises[i].duration)
       }
       Object.assign(dbWorkout[dbWorkout.length-1], {totalDuration: totalDuration})      
-      console.log(dbWorkout[dbWorkout.length-1])
+     // console.log(dbWorkout[dbWorkout.length-1])
       res.json(dbWorkout);
     })
     .catch(err => {
