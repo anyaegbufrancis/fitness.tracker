@@ -1,7 +1,8 @@
 //Requires the necessary module
 const express = require("express");
-const mongooseDB = require("mongoose")
-const Workout = require("./models/model")
+const mongooseDB = require("mongoose");
+const Workout = require("./models/model");
+require('dotenv').config();
 
 const PORT = process.env.PORT || 3000
 
@@ -17,8 +18,7 @@ app.use(require("./routes/api-routes.js"));
 app.use(require("./routes/html-routes.js"));
 
 //Connects to Mongoose DB
-const url  = "mongodb+srv://root:root@cluster0.j8t99.mongodb.net/workout";
-mongooseDB.connect( url || process.env.MONGODB_URI, {
+mongooseDB.connect( process.env.url || "mongodb://localhost/workout", {
   useNewUrlParser: true
 })
 .then(e => {console.log("Application coonection to backend completed!!!")});
