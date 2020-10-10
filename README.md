@@ -1,5 +1,5 @@
 
-  # NoSQL Based Workout Tracker   ![License](https://img.shields.io/badge/License-MIT-blue.svg)
+  # NoSQL Based Fitness Tracker   ![License](https://img.shields.io/badge/License-MIT-blue.svg)
   
   <br>
   
@@ -18,7 +18,12 @@
   
   ## Description  
   
-  This is a Mongoose ODM based fitness tracker application. The backend is powered by MongoDB and Node.js with express middleware. This application enables a user to track her fitness activities, update exising fitness regime, view the dashboard of summary of the progress and activity history. The application was successfully deployed on Heroku.
+  This is a Mongoose ODM based fitness tracker application. The backend is powered by MongoDB and Node.js with express middleware. This application enables a user to track her fitness activities, update exising fitness regime, view the dashboard of summary of the progress and activity history. The application was successfully deployed on Heroku. This app will enable a user to view create and track daily workouts. The user will also be able to log multiple exercises in a workout on a given day. The user should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, the user should be able to track their distance traveled.
+  
+
+## Business Context
+
+A consumer will reach their fitness goals more quickly when they track their workout progress.
   
   ## Installation
   
@@ -47,7 +52,7 @@ Please clone the project to your local repo, install the dependencies, start the
   
   ## Test
   
-  Please click the below to see the feature demo on Heroku:
+  Please click the below to see the feature demo on Heroku: https://ffitness-tracker.herokuapp.com/
   
   [![Project Demo on Heroku Feature Demo](./public/assets/pg5.jpg)](https://ffitness-tracker.herokuapp.com/)
   
