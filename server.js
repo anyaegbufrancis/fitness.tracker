@@ -17,10 +17,11 @@ app.use(require("./routes/api-routes.js"));
 app.use(require("./routes/html-routes.js"));
 
 //Connects to Mongoose DB
-mongooseDB.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
+const url  = "mongodb+srv://root:root@cluster0.j8t99.mongodb.net/workout";
+mongooseDB.connect( url || process.env.MONGODB_URI, {
   useNewUrlParser: true
 })
-.then(e => {console.log("Express Hooked up to MongoDB!!!")});
+.then(e => {console.log("Application coonection to backend completed!!!")});
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
