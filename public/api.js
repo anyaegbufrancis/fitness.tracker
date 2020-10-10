@@ -8,12 +8,12 @@ const API = {
       console.log(err)
     }
     const json = await res.json();
-    console.log(res.json)
+   // console.log(res.json)
     return json[json.length - 1];
   },
   
   async addExercise(data) {
-    console.log(data)
+    //console.log(data)
     const id = location.search.split("=")[1];
 
     const res = await fetch("/api/workouts/" + id, {
