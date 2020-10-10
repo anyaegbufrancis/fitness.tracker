@@ -1,5 +1,6 @@
 let mongoose = require("mongoose");
 let db = require("../models/model");
+require('dotenv').config();
 
 mongoose.connect( process.env.url || "mongodb://127.0.0.1/workout", {
   useNewUrlParser: true,
