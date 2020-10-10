@@ -1,5 +1,5 @@
 
-  # NoSQL Based Fitness Tracker   ![License](https://img.shields.io/badge/License-MIT-blue.svg)
+  # Fitness Tracker Web App  ![License](https://img.shields.io/badge/License-MIT-blue.svg)
   
   <br>
   
